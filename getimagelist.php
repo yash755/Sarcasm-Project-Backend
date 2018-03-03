@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 $image_list = array();
 
 
-$sql = "SELECT * FROM Images";
+$sql = "SELECT * FROM Images ORDER BY sno DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
